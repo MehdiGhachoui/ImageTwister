@@ -4,7 +4,7 @@ import { imageCanvas, imageColors, imageRgb, replaceRgb } from "./utility";
 
 const circleCreate = (image) => {
 
-    if (imagePng.naturalWidth !== 512 && imagePng.naturalHeight !== 512)
+    if (imagePng.naturalWidth !== 512 || imagePng.naturalHeight !== 512)
         throw "Image size doesn't match"
 
     var imageData = imageCanvas(image);
